@@ -27,8 +27,8 @@ requestOrthosBtn.addEventListener('click', async () => {
         "day_skip":5,
         "bands":["rgb"]
     }
-    const orthos = await window.backend.getOrthos("prova")
-    console.log(orthos.status)
+    const orthos = await window.backend.getOrthos(request_example)
+    console.log(orthos)
 })
 
 setButton.addEventListener('click', () => {

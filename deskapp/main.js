@@ -8,7 +8,7 @@ async function _getOrthos(event,requestMeta) {
           'Accept': '*/*',
           "Content-Type": "application/json",
         },
-        body: requestMeta, // body data type must match "Content-Type" header
+        body: JSON.stringify(requestMeta), // body data type must match "Content-Type" header
       });
     const content = await result.json()
     return content
